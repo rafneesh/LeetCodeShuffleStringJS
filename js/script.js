@@ -3,10 +3,6 @@
  * @param {number[]} indices
  * @return {string}
  */
-(window as any).global = window;
-// @ts-ignore
-window.Buffer = window.Buffer || require('buffer').Buffer;
-
 var restoreString = function(s, indices) {
      let out = Buffer.alloc(indices.length);
 
